@@ -7,7 +7,7 @@ $(document).ready(function() {
         "tôi không bao giờ thừa nhận tôi đã làm điều đó": "i never admitted i did that",
         "anh ta không bao giờ thừa nhận khi anh ta nhầm lẫn": "he never admits when he makes mistake",
         "đồng ý": "agree",
-        "chúng ta vẫn có thể làm việc cùng nhau nếu chúng ta không đồng ý": "we can still work together if we don't agree",
+        "chúng ta vẫn có thể làm việc cùng nhau nếu chúng ta không đồng ý": "we can still work together if we do not agree",
         "thông báo(something)": "announce",
         "tôi sẽ công bố tin tức vào ngày mai": "i will announce the news tomorrow",
         "xin lỗi": "apologize",
@@ -47,8 +47,14 @@ $(document).ready(function() {
         "ám chỉ": "imply",
         "thông báo(somebody)": "inform",
         "mở đầu": "initial",
-        "thành ngữ": "idiom"
+        "thành ngữ": "idiom",
+        "khăng khăng": "insist",
+        "vấn đề": "issue",
+        "đề cập": "mention",
+        "gián đoạn": "interrupt",
+        "nguyên liệu": "material"
     }
+    
     let start = new Date().getTime();
     let generated = generateWord();
     $("input[type='text']").focus();

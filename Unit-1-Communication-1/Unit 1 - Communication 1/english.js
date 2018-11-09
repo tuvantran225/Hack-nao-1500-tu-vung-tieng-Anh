@@ -48,8 +48,28 @@ $(document).ready(function() {
         "imply": "ám chỉ",
         "inform(somebody)": "thông báo",
         "initial": "mở đầu",
-        "idiom": "thành ngữ"
+        "idiom": "thành ngữ",
+        "insist": "khăng khăng",
+        "issue": "vấn đề",
+        "mention": "đề cập",
+        "interrupt": "gián đoạn",
+        "material": "nguyên liệu"
     }
+
+    var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', 'http://www.soundjay.com/misc/sounds/bell-ringing-01.mp3');
+    
+    audioElement.addEventListener('ended', function() {
+        this.play();
+    }, false);
+    
+    $('#play').click(function() {
+        audioElement.play();
+    });
+    
+    $('#replay').click(function() {
+        audioElement.currentTime = 0;
+    });
     
     let start = new Date().getTime();
     let generated = generateWord();
